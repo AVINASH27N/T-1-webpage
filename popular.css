@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f4f7fb, #e8f0ff);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0B3D91;
+  padding: 15px 40px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00A8A8;
+}
+
+.nav-links li a.active {
+  border-bottom: 2px solid #00A8A8;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  margin: 30px 0;
+  color: #0B3D91;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Train Container */
+.train-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 40px;
+  max-width: 1000px;
+  margin: auto;
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+/* Category Section */
+.category {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+
+.category h3 {
+  color: #0072ff;
+  margin-bottom: 20px;
+  font-size: 22px;
+  border-left: 5px solid #0072ff;
+  padding-left: 10px;
+}
+
+/* Train Card */
+.train-card {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.train-card img {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.train-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.train-details h4 {
+  color: #0B3D91;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.train-details p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0B3D91;
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+}

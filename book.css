@@ -1,0 +1,688 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:rgb(5, 198, 232) !important;
+    color:#222;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    font-size:32px;
+    color:#0b72ff;
+}
+
+.logo h2{
+    color:#0b72ff;
+    font-size:28px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li .active{
+    color:#0b72ff;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.login-btn,
+.register-btn{
+
+    padding:10px 22px;
+    border:none;
+    cursor:pointer;
+    border-radius:30px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.login-btn{
+    background:white;
+    color:#0b72ff;
+    border:2px solid #0b72ff;
+}
+
+.login-btn:hover{
+    background:#0b72ff;
+    color:white;
+}
+
+.register-btn{
+    background:#0b72ff;
+    color:white;
+}
+
+.register-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(11,114,255,.3);
+}
+
+/* ===========================
+ HERO
+=========================== */
+
+.hero{
+
+    height:90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.55)),
+    url("../images/train-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    position:relative;
+
+    color:white;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content h1{
+
+    font-size:60px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.hero-content p{
+
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.hero-features{
+
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.feature{
+
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(12px);
+
+    padding:18px 30px;
+
+    border-radius:50px;
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    transition:.4s;
+}
+
+.feature:hover{
+
+    transform:translateY(-8px);
+    background:#0b72ff;
+}
+
+.feature i{
+
+    font-size:24px;
+}
+
+/* ===========================
+ BOOKING SECTION
+=========================== */
+
+.booking-section{
+
+    width:100%;
+    margin-top:-120px;
+    position:relative;
+    z-index:5;
+}
+
+.booking-card{
+
+    width:85%;
+    margin:auto;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.booking-card h2{
+
+    text-align:center;
+    margin-bottom:35px;
+    color:#0b72ff;
+    font-size:34px;
+}
+
+.booking-card h2 i{
+
+    margin-right:12px;
+}
+
+/* ===========================
+ ROW
+=========================== */
+
+.row{
+
+    display:flex;
+    gap:25px;
+    margin-bottom:25px;
+    align-items:center;
+}
+
+/* ===========================
+ INPUT GROUP
+=========================== */
+
+.input-group{
+
+    flex:1;
+}
+
+.input-group label{
+
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.input-box{
+
+    display:flex;
+    align-items:center;
+
+    border:2px solid #dfe6ee;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.input-box:hover{
+
+    border-color:#0b72ff;
+}
+
+.input-box i{
+
+    width:55px;
+    text-align:center;
+    color:#0b72ff;
+    font-size:18px;
+}
+
+.input-box input,
+.input-box select{
+
+    width:100%;
+    padding:18px;
+
+    border:none;
+    outline:none;
+
+    font-size:16px;
+
+    background:transparent;
+}
+
+/* ===========================
+ SWAP BUTTON
+=========================== */
+
+.swap{
+
+    margin-top:32px;
+}
+
+.swap button{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#0b72ff;
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    transition:.4s;
+}
+
+.swap button:hover{
+
+    transform:rotate(180deg) scale(1.08);
+
+    box-shadow:0 10px 25px rgba(11,114,255,.35);
+}
+
+/* ===========================
+ SEARCH BUTTON
+=========================== */
+
+.search-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#0b72ff,#004aad);
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.search-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 30px rgba(11,114,255,.35);
+}
+
+.search-btn i{
+
+    margin-right:10px;
+}
+/* ===========================
+   SERVICES SECTION
+=========================== */
+
+.services{
+    width:90%;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.service-card i{
+    font-size:45px;
+    color:#0b72ff;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* ===========================
+   POPULAR TRAINS
+=========================== */
+
+.popular{
+    width:90%;
+    margin:80px auto;
+}
+
+.popular h2{
+    text-align:center;
+    font-size:40px;
+    color:#0b72ff;
+    margin-bottom:50px;
+}
+
+.train-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+}
+
+.train-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    transition:.4s;
+    padding:30px;
+}
+
+.train-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(0,0,0,.18);
+}
+
+.train-card h3{
+    color:#0b72ff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.train-card p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.train-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#0b72ff;
+    color:white;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.train-card button:hover{
+    background:#004aad;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:100px;
+    background:#06224a;
+    color:white;
+    padding:60px 10%;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-content h3{
+    margin-bottom:20px;
+    color:#7db8ff;
+}
+
+.footer-content p{
+    margin-bottom:12px;
+    color:#d8d8d8;
+}
+
+footer hr{
+    margin:40px 0 20px;
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.2);
+}
+
+.copyright{
+    text-align:center;
+    color:#ccc;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0b72ff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#004aad;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-content{
+    animation:fadeUp 1s ease;
+}
+
+.booking-card{
+    animation:fadeUp 1.2s ease;
+}
+
+.service-card{
+    animation:fadeUp 1.4s ease;
+}
+
+.train-card{
+    animation:fadeUp 1.6s ease;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+    .navbar{
+        width:95%;
+    }
+
+    .booking-card{
+        width:95%;
+    }
+
+}
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin:20px 0;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .swap{
+        margin:0;
+    }
+
+    .swap button{
+        transform:rotate(90deg);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .booking-card{
+        padding:25px;
+    }
+
+    .booking-card h2{
+        font-size:28px;
+    }
+
+    .feature{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .nav-links{
+        gap:15px;
+        font-size:14px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .login-btn,
+    .register-btn{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .popular h2{
+        font-size:30px;
+    }
+
+    .booking-card{
+        margin-top:40px;
+    }
+
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IRCTC Booking</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="book.css">
+
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-train"></i>
+
+<h2>IRCTC Booking</h2>
+
+</div>
+
+<ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">Book Ticket</a></li>
+    <li><a href="popular.html">Popular Trains</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="buttons">
+
+<button class="login-btn">Login</button>
+
+<button class="register-btn" onclick="window.location.href='register.html'">Register</button>
+
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ===================== HERO ===================== -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Book Your Train Ticket</h1>
+
+<p>Fast • Secure • Comfortable Journey</p>
+
+<div class="hero-features">
+
+<div class="feature">
+
+<i class="fa-solid fa-ticket"></i>
+
+<span>Easy Booking</span>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-shield"></i>
+
+<span>Secure Payment</span>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<span>Instant Confirmation</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== BOOKING FORM ===================== -->
+
+<section class="booking-section">
+
+<div class="booking-card">
+
+<h2>
+
+<i class="fa-solid fa-train-subway"></i>
+
+Search Trains
+
+</h2>
+
+<form>
+
+<div class="row">
+
+<div class="input-group">
+
+<label>From Station</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<input type="text"
+id="fromStation"
+placeholder="Enter Source Station">
+
+</div>
+
+</div>
+
+<div class="swap">
+
+<button type="button" id="swapBtn">
+
+<i class="fa-solid fa-right-left"></i>
+
+</button>
+
+</div>
+
+<div class="input-group">
+
+<label>To Station</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<input type="text"
+id="toStation"
+placeholder="Enter Destination">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+
+<label>Journey Date</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-calendar"></i>
+
+<input type="date">
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>Passengers</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-users"></i>
+
+<select>
+
+<option>1 Passenger</option>
+
+<option>2 Passengers</option>
+
+<option>3 Passengers</option>
+
+<option>4 Passengers</option>
+
+<option>5 Passengers</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+
+<label>Travel Class</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-chair"></i>
+
+<select>
+
+<option>Select Class</option>
+
+<option>1A</option>
+
+<option>2A</option>
+
+<option>3A</option>
+
+<option>Sleeper</option>
+
+<option>Second Sitting</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>Quota</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-ticket"></i>
+
+<select>
+
+<option>General</option>
+
+<option>Tatkal</option>
+
+<option>Ladies</option>
+
+<option>Senior Citizen</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<button class="search-btn" type="submit">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search Trains
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ===================== FEATURES ===================== -->
+
+<section class="services">
+
+<div class="service-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Safe & Secure</h3>
+
+<p>100% Secure Online Payment</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Instant Booking</h3>
+
+<p>Fast Ticket Confirmation</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24×7 Support</h3>
+
+<p>Always Available for Help</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-tags"></i>
+
+<h3>Best Price</h3>
+
+<p>Affordable Ticket Fare</p>
+
+</div>
+
+</section>
+
+<!-- ===================== POPULAR TRAINS ===================== -->
+
+<section class="popular">
+
+<h2>Popular Trains</h2>
+
+<div class="train-container">
+
+<div class="train-card">
+
+<h3>Vande Bharat </h3>
+
+<p>Chennai ➜ Bengaluru</p>
+
+<button>Book Now</button>
+
+</div>
+
+<div class="train-card">
+
+<h3>Tejas Express</h3>
+
+<p>Chennai ➜ Madurai</p>
+
+<button>Book Now</button>
+
+</div>
+
+<div class="train-card">
+
+<h3>Pandian Express</h3>
+
+<p>Chennai ➜ Madurai</p>
+
+<button>Book Now</button>
+
+</div>
+
+<div class="train-card">
+
+<h3>Cheran Express</h3>
+
+<p>Chennai ➜ Coimbatore</p>
+
+<button>Book Now</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>IRCTC Booking</h3>
+
+<p>Fast, Secure and Reliable Train Ticket Booking.</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<p>Home</p>
+
+<p>Book Ticket</p>
+
+<p>Popular Trains</p>
+
+<p>Contact</p>
+
+</div>
+
+<div>
+
+<h3>Support</h3>
+
+<p>Email : support@irctc.com</p>
+
+<p>Phone : +91 9876543210</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 IRCTC Booking. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ===================== JS ===================== -->
+
+<script src="book.js"></script>
+
+</body>
+</html>
